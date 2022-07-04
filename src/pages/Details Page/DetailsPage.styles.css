@@ -1,0 +1,30 @@
+.details-page {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: auto;
+}
+
+.poster-container {
+    aspect-ratio: 1 / 1.5;
+    width: 40%;
+    outline: auto;
+}
+
+.info-container {
+    width: 50%;
+    height: 100%;
+    outline: auto;
+}
+

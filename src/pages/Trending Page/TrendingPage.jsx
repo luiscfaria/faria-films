@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import MoviePoster from '../components/MoviePoster.jsx'
+import MoviePoster from '../../components/MoviePoster.jsx'
 import './TrendingPage.styles.css'
 
 const TrendingPage = () => {
