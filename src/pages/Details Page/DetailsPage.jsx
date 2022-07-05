@@ -7,6 +7,7 @@ const DetailsPage = () => {
   
   const image_path = 'https://image.tmdb.org/t/p/w500'
 
+
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -24,7 +25,9 @@ const DetailsPage = () => {
     }
 
     fetchData()
-  }, [])
+  }, [id])
+
+  const date = new Date(data.release_date)
 
   return (
     <div>
@@ -37,7 +40,14 @@ const DetailsPage = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
           }}></div>
-          <div className='info-container'></div>
+          <div className='info-container'>
+            <div className='title-rating'>
+              <div>{data.title} ({date.getFullYear()})</div>
+              <div>{data.vote_average}/10</div>
+            </div>
+            <span>{data.tagline}</span>
+            <div>{data.overview}</div>
+          </div>
         </div>
       </div>
     </div>

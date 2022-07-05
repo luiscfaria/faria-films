@@ -1,30 +1,36 @@
 .details-page {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .details-container {
-    width: 90%;
-    max-width: 1200px;
-    height: 85vh;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: auto;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: auto;
 }
 
 .poster-container {
-    aspect-ratio: 1 / 1.5;
-    width: 40%;
-    outline: auto;
+  aspect-ratio: 1 / 1.5;
+  width: 40%;
+  outline: auto;
 }
 
 .info-container {
-    width: 50%;
-    height: 100%;
-    outline: auto;
+  aspect-ratio: 1 / 1.2;
+  width: 50%;
+  outline: auto;
 }
 
+.title-rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 0 10px;
+}
