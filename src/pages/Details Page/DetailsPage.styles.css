@@ -18,7 +18,7 @@
 
 .poster-container {
     aspect-ratio: 1 / 1.5;
-    width: 40%;
+    height: 100%;
     outline: auto;
 }
 

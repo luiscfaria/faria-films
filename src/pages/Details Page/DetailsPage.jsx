@@ -31,12 +31,14 @@ const DetailsPage = () => {
       <div className="details-page">
         <h1 onClick={() => console.log(data)}>{data.title}</h1>
         <div className="details-container">
-          <div className='poster-container'
-          style={{
-            backgroundImage: `url(${image_path}${data.poster_path})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-          }}></div>
+          <div 
+              className='poster-container'
+              style={{
+                backgroundImage: `url(${image_path}${data.poster_path})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+              }}
+          ></div>
           <div className='info-container'></div>
         </div>
       </div>
