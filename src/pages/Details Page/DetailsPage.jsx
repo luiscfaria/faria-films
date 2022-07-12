@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Header from '../../components/Header'
 import './DetailsPage.styles.css'
+
+import { Rate } from 'antd';
 
 const DetailsPage = () => {
   const { id } = useParams()
@@ -31,6 +34,7 @@ const DetailsPage = () => {
 
   return (
     <div>
+      <Header/>
       <div className="details-page">
         <h1 onClick={() => console.log(data)}>{data.title}</h1>
         <div className="details-container">
@@ -43,10 +47,11 @@ const DetailsPage = () => {
           <div className='info-container'>
             <div className='title-rating'>
               <div>{data.title} ({date.getFullYear()})</div>
-              <div>{data.vote_average}/10</div>
+              {/* <div>{data.vote_average}/10</div> */}
+              <div><Rate allowHalf disabled value={(data.vote_average)/2} style={{fontSize: "1rem", minWidth: "130px"}}/></div>
             </div>
-            <span>{data.tagline}</span>
-            <div>{data.overview}</div>
+            <div style={{fontStyle: "italic"}}>{data.tagline}</div>
+            <div style={{marginTop: "1rem"}}>{data.overview}</div>
           </div>
         </div>
       </div>

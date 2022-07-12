@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header-container {
+    /* background-color: aliceblue; */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    height: 5vh;
+    outline: auto;
+}

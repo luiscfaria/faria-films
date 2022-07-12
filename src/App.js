@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { Routes, Route } from 'react-router-dom'
 import TrendingPage from './pages/Trending Page/TrendingPage.jsx'
 import DetailsPage from './pages/Details Page/DetailsPage.jsx';
+import './App.css';
 
 class App extends Component {
   render() {
