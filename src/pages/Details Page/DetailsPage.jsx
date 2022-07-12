@@ -50,8 +50,14 @@ const DetailsPage = () => {
               {/* <div>{data.vote_average}/10</div> */}
               <div><Rate allowHalf disabled value={(data.vote_average)/2} style={{fontSize: "1rem", minWidth: "130px"}}/></div>
             </div>
-            <div style={{fontStyle: "italic"}}>{data.tagline}</div>
-            <div style={{marginTop: "1rem"}}>{data.overview}</div>
+            <div style={{fontStyle: "italic", fontSize: "1.5rem"}}>{data.tagline}</div>
+            <div 
+            style={{
+              marginTop: "1rem", 
+              fontSize: "1.2rem", 
+              textAlign: "justify", 
+              padding: "0 8px"
+              }}>{data.overview}</div>
           </div>
         </div>
       </div>
