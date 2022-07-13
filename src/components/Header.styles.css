@@ -1,15 +1,16 @@
 .header {
+    height: 9vh;
     display: flex;
     justify-content: center;
     color: white;
-    margin-bottom: 1rem;
+    padding-top: 0.5rem;
 }
 
 .header-container {
     /* background-color: aliceblue; */
     width: 100%;
-    max-width: 1200px;
+    max-width: 600px;
     padding: 0 20px;
     height: 5vh;
-    outline: auto;
+    border-bottom: #fff solid 1px;
 }

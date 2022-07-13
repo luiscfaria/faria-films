@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import "./Header.styles.css";
 import { Menu } from "antd";
 import { MailOutlined } from "@ant-design/icons";
@@ -7,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-container">
-        <Menu mode="horizontal" theme="dark" defaultSelectedKeys={["trending"]}>
+        <Menu mode="horizontal" theme="dark" style={{height: '97%', backgroundColor: 'black'}}>
           <Menu.Item key="trending">
             <a href="/">Trending</a>
           </Menu.Item>
