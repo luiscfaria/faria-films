@@ -26,7 +26,7 @@ const SeriesPage = () => {
   return (
     <div>
       <div className='trending-page'>
-      <h1>Popular Series</h1>
+      <h1>Popular TV Series</h1>
         <div className="posters-container">
           {data.map((movie) => (
             <MoviePoster movie={movie} />
