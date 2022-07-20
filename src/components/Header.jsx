@@ -18,6 +18,9 @@ const Header = () => {
           <Menu.Item key="series">
             <a href="/series">Series</a>
           </Menu.Item>
+          <Menu.Item key="artists">
+            <a href="/artists">Artists</a>
+          </Menu.Item>
         </Menu>
       </div>
     </div>
