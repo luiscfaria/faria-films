@@ -7,7 +7,7 @@ const SeriesPage = () => {
 
   useEffect(() => {
     const url =
-      'https://api.themoviedb.org/3/movie/popular?api_key=95b640c810615585379ac1368f019908&language=en-US&page=1'
+      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
 
     const fetchData = async () => {
       try {

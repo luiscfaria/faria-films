@@ -7,7 +7,7 @@ const TrendingPage = () => {
 
   useEffect(() => {
     const url =
-      'https://api.themoviedb.org/3/trending/all/day?api_key=95b640c810615585379ac1368f019908'
+      `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`
 
     const fetchData = async () => {
       try {

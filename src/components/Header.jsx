@@ -1,8 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import "./Header.styles.css";
 import { Menu } from "antd";
-import { MailOutlined } from "@ant-design/icons";
 
 const Header = () => {
   return (

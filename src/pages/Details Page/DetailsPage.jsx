@@ -13,7 +13,7 @@ const DetailsPage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = `https://api.themoviedb.org/3/movie/${id}?api_key=95b640c810615585379ac1368f019908`;
+    const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`;
 
     const fetchData = async () => {
       try {
