@@ -33,7 +33,6 @@ const DetailsPage = () => {
 
   return (
     <div className="details-page">
-      <h1>{data.title}</h1>
       <div className="details-container">
         <div
           className="poster-container"
