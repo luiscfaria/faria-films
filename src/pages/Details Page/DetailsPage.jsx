@@ -47,7 +47,6 @@ const DetailsPage = () => {
             <div>
               {data.title} ({date.getFullYear()})
             </div>
-            {/* <div>{data.vote_average}/10</div> */}
             <div>
               <Rate
                 allowHalf
@@ -72,6 +71,7 @@ const DetailsPage = () => {
           </div>
         </div>
       </div>
+      <div className="more-info"></div>
     </div>
   );
 };
